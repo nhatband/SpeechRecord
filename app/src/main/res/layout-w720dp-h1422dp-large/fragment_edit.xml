@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.EditFragment"
+    android:padding="8dp"
+    android:background="@drawable/whitebackgroundcard"
+    android:paddingBottom="80dp">
+
+    <FrameLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/text_editor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/dull_whitebackgroundcard"
+                android:padding="20dp"
+                android:scrollbars="vertical"
+                android:textColor="#000"
+                android:textSize="18sp" />
+        </ScrollView>
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/edit_circle_bar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+
+    <vn.edu.usth.usthspeechrecord.views.MediaButton
+        android:id="@+id/mediaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_container"
+        android:layout_marginTop="95dp"
+        android:layout_centerHorizontal="true"
+        android:elevation="6dp"
+        android:background="@drawable/circle_gradient"
+        android:src="@drawable/ic_play_arrow_black_24dp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mediaButton"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="15dp"
+        android:elevation="4dp"
+        android:background="@drawable/shapevotebtn"
+        android:layout_toStartOf="@+id/mediaButton"
+        android:src="@drawable/ic_done_black_24dp" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mediaButton"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="15dp"
+        android:elevation="4dp"
+        android:background="@drawable/play_retry_bg"
+        android:layout_toEndOf="@+id/mediaButton"
+        android:src="@drawable/ic_navigate_next_black_24dp" />
+
+
+
+</RelativeLayout>
