@@ -1,4 +1,4 @@
-# USTHSpeechRecord
+#SpeechRecord
 1- Working functions:
   + Record voice and upload voice to server.
   + Vote a voice is good or bad
